@@ -13,3 +13,50 @@
  *= require_tree .
  *= require_self
  */
+@font-face {
+  font-family: proxima;
+  src: url(font.otf);
+}
+
+body {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: proxima;
+  color: #434b54;
+}
+
+.splashscreen {
+  font-weight: 400;
+  text-align: center;
+}
+
+.splashscreenh1 {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+  font-weight: 400;
+}
+
+.splashscreenLink {
+  align-self: flex-end;
+  width: 90%;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.splashscreenLink > a {
+  text-decoration: none;
+  color: #434b54;
+  width: 100%;
+}
+
+#sssignIn {
+  background-color: #3778c2;
+}
+
+#sssignIn > a {
+  color: #fff;
+}
