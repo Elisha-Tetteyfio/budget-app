@@ -1,17 +1,27 @@
-<div id="<%= dom_id group %>">
-  <p>
-    <strong>Name:</strong>
-    <%= group.name %>
-  </p>
+<div id="<%= dom_id group %>" class="groupCard">
+  
+  <div class="groupCardL">
+    <img src= <%=group.icon%> alt="image">
+  </div>
 
-  <p>
-    <strong>Icon:</strong>
-    <%= group.icon %>
-  </p>
+  <div class="groupCardC">
+    <div>
+      <%= link_to group.name, group %>
+    </div>
+    <div class="groupCardCDate">
+      <%= group.created_at.strftime('%d %b %Y') %>
+    </div>
+  </div>
 
-  <p>
-    <strong>User:</strong>
-    <%= group.user_id %>
-  </p>
+
+  <div class="groupCardR">
+    <strong>
+      <% total = 0 %>
+      <% group.entities.each do |entity| %>
+        <% total += entity.amount %>
+      <% end %>
+      $ <%= total %>
+    </strong>
+  </div>
 
 </div>

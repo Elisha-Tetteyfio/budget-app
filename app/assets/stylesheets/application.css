@@ -80,3 +80,61 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
+.groupCard {
+  display: flex;
+  width: 95%;
+  margin: 1rem auto;
+  background-color: #fff;
+}
+
+.groupCardL {
+  width: 20%;
+  height: 3rem;
+  border: #3778c2 1px dotted;
+  margin: 3%;
+}
+
+.groupCardC {
+  width: 50%;
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 400;
+}
+
+.groupCardR {
+  width: 20%;
+  margin: 3%;
+  font-weight: 600;
+}
+
+.groupCardCDate {
+  font-size: 0.7em;
+}
+
+.groupIndexButton {
+  width: 100%;
+  background-color: #5fb523;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.groupIndexButtonL {
+  color: #eed;
+  text-decoration: none;
+  border: #eed 1px solid;
+  border-radius: 5px;
+  padding: 0.5em;
+  width: 80%;
+  text-align: center;
+}
+
+#groups {
+  margin-bottom: 5rem;
+}
