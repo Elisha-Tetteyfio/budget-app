@@ -22,10 +22,12 @@ class EntitiesController < ApplicationController
   # POST /entities or /entities.json
   def create
     @entity = Entity.new(entity_params)
+    @entity.author = current_user
+    @entity.group_id = Group.find_by(id: params[:group_id]).id
 
     respond_to do |format|
       if @entity.save
-        format.html { redirect_to entity_url(@entity), notice: "Entity was successfully created." }
+        format.html { redirect_to group_entities_path(params[:group_id]), notice: "Entity was successfully created." }
         format.json { render :show, status: :created, location: @entity }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -50,9 +52,11 @@ class EntitiesController < ApplicationController
   # DELETE /entities/1 or /entities/1.json
   def destroy
     @entity.destroy
+    #@group = Group.find_by(id: params[:group_id])
+    #@group.entities.find_by(entity_id: @entity.id).destroy
 
     respond_to do |format|
-      format.html { redirect_to entities_url, notice: "Entity was successfully destroyed." }
+      format.html { redirect_to group_entities_path(params[:group_id]), notice: "Entity was successfully destroyed." }
       format.json { head :no_content }
     end
   end
