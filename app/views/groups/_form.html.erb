@@ -1,4 +1,6 @@
 <%= form_with(model: group) do |form| %>
+  <%= render partial: "/layouts/header", locals: {name: "New Category", f: form, b_name: "Add"} %>
+
   <% if group.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(group.errors.count, "error") %> prohibited this group from being saved:</h2>
@@ -12,16 +14,11 @@
   <% end %>
 
   <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, placeholder: "Name", class: "form"  %>
   </div>
 
   <div>
-    <%= form.label :icon, style: "display: block" %>
-    <%= form.text_area :icon %>
+    <%= form.text_field :icon, placeholder: "Image url", class: "form"  %>
   </div>
 
-  <div>
-    <%= form.submit %>
-  </div>
 <% end %>

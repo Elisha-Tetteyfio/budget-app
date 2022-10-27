@@ -155,3 +155,27 @@ body {
 #entities {
   margin-bottom: 5rem;
 }
+
+.menuBody {
+  height: 100vh;
+  background-color: #3778c2;
+  padding-top: 2rem;
+}
+
+.menuItem {
+  width: 75%;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: #eed;
+}
+
+.menuButton {
+  color: #eed;
+  background-color: inherit;
+  border: none;
+  font-size: 1.5rem;
+}

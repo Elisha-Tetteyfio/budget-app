@@ -1,13 +1,13 @@
 <%= render partial: "/layouts/header", locals: {name: current_user.name} %>
 
-<div>
-  <div>
-    <%= link_to "Edit account", edit_user_path(current_user) %>
+<div class="menuBody">
+  <div class="menuItem">
+    <%= link_to "Edit account", edit_user_path(current_user), class: "menuLink" %> <hr>
   </div>
-  <div>
-    <%= link_to "Categories", groups_path %>
+  <div class="menuItem">
+    <%= link_to "Categories", groups_path, class: "menuLink" %> <hr>
   </div>
-  <div>
-    <%= button_to "Sign out", destroy_user_session_path, method: :delete %><br />
+  <div class="menuItem">
+    <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "menuButton" %><br />
   </div>
 </div>

@@ -28,7 +28,7 @@ class EntitiesController < ApplicationController
 
     respond_to do |format|
       if @entity.save
-        format.html { redirect_to group_entities_path(params[:group_id]), notice: "Entity was successfully created." }
+        format.html { redirect_to group_path(params[:group_id]), notice: "Entity was successfully created." }
         format.json { render :show, status: :created, location: @entity }
       else
         format.html { render :new, status: :unprocessable_entity }
