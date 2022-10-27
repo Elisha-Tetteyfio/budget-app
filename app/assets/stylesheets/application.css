@@ -77,8 +77,7 @@ body {
 }
 
 .headerBack {
-  color: #fff;
-  text-decoration: none;
+  margin-left: 1rem;
 }
 
 .groupCard {
@@ -136,5 +135,23 @@ body {
 }
 
 #groups {
+  margin-bottom: 5rem;
+}
+
+.entity {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  height: 10vh;
+}
+
+.entityDate {
+  font-size: 0.7em;
+}
+
+#entities {
   margin-bottom: 5rem;
 }

@@ -1,0 +1,13 @@
+<%= render partial: "/layouts/header", locals: {name: current_user.name} %>
+
+<div>
+  <div>
+    <%= link_to "Edit account", edit_user_path(current_user) %>
+  </div>
+  <div>
+    <%= link_to "Categories", groups_path %>
+  </div>
+  <div>
+    <%= button_to "Sign out", destroy_user_session_path, method: :delete %><br />
+  </div>
+</div>
