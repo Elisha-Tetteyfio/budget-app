@@ -6,11 +6,9 @@ Rails.application.routes.draw do
   resources :groups do
     resources :entities
   end
-  resources :users
   # root "groups#index"
   get '/users', to: 'groups#index'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get '/users/:id', to: 'groups#index'
+  resources :users
 
-  # Defines the root path route ("/")
-  # root "articles#index"
 end
