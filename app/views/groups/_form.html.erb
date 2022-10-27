@@ -1,0 +1,25 @@
+<%= form_with(model: group) do |form| %>
+  <%= render partial: "/layouts/header", locals: {name: "New Category", f: form, b_name: "Save"} %>
+
+  <% if group.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(group.errors.count, "error") %> prohibited this category from being saved:</h2>
+
+      <ul>
+        <% group.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+      <p>Refresh page and enter correct values</p>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.text_field :name, placeholder: "Name", class: "form"  %>
+  </div>
+
+  <div>
+    <%= form.text_field :icon, placeholder: "Image url", class: "form"  %>
+  </div>
+
+<% end %>

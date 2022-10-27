@@ -1,0 +1,185 @@
+@font-face {
+  font-family: proxima;
+  src: url(font.otf);
+}
+
+html {
+  padding: 0;
+  margin-top: -20px;
+}
+
+body {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: proxima;
+  color: #434b54;
+  background-color: #eed;
+  margin: 0;
+}
+
+.splashscreen {
+  font-weight: 400;
+  text-align: center;
+}
+
+.splashscreenh1 {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+  font-weight: 400;
+}
+
+.splashscreenLink {
+  align-self: flex-end;
+  width: 90%;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.splashscreenLink > a {
+  text-decoration: none;
+  color: #434b54;
+  width: 100%;
+}
+
+#sssignIn {
+  background-color: #3778c2;
+}
+
+#sssignIn > a {
+  color: #fff;
+}
+
+.header {
+  background-color: #3778c2;
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+  align-items: flex-end;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
+.form {
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  margin: 1px 0;
+}
+
+.headerButton {
+  background-color: inherit;
+  border: none;
+  color: #eed;
+}
+
+.headerBack {
+  margin-left: 1rem;
+}
+
+.groupCard {
+  display: flex;
+  width: 95%;
+  margin: 1rem auto;
+  background-color: #fff;
+}
+
+.groupCardL {
+  width: 20%;
+  height: 3rem;
+  border: #3778c2 1px dotted;
+  margin: 3%;
+}
+
+.groupCardL img {
+  width: 100%;
+}
+
+.groupCardC {
+  width: 50%;
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 400;
+}
+
+.groupCardR {
+  width: 20%;
+  margin: 3%;
+  font-weight: 600;
+}
+
+.groupCardCDate {
+  font-size: 0.7em;
+}
+
+.groupIndexButton {
+  width: 100%;
+  background-color: #5fb523;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.groupIndexButtonL {
+  color: #eed;
+  text-decoration: none;
+  border: #eed 1px solid;
+  border-radius: 5px;
+  padding: 0.5em;
+  width: 80%;
+  text-align: center;
+}
+
+#groups {
+  margin-bottom: 5rem;
+}
+
+.entity {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  height: 10vh;
+}
+
+.entityDate {
+  font-size: 0.7em;
+}
+
+#entities {
+  margin-bottom: 5rem;
+}
+
+.menuBody {
+  height: 100vh;
+  background-color: #3778c2;
+  padding-top: 2rem;
+}
+
+.menuItem {
+  width: 75%;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: #eed;
+}
+
+.menuButton {
+  color: #eed;
+  background-color: inherit;
+  border: none;
+  font-size: 1.5rem;
+}

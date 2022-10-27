@@ -1,0 +1,25 @@
+<%= form_with model: entity, url: group_entities_path do |form| %>
+  <%= render partial: "/layouts/header", locals: {name: "New Transaction", f: form, b_name: "Save"} %>
+
+  <% if entity.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(entity.errors.count, "error") %> prohibited this transaction from being saved:</h2>
+
+      <ul>
+        <% entity.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+      <p>Refresh page and enter correct values</p>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.text_field :name, placeholder: "Name", class: "form"  %>
+  </div>
+
+  <div>
+    <%= form.text_field :amount, placeholder: "Amount", class: "form"  %>
+  </div>
+
+<% end %>

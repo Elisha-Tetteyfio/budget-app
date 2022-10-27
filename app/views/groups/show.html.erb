@@ -1,0 +1,28 @@
+<%= render partial: "/layouts/header", locals: {name: "Transactions"} %>
+
+<p style="color: green"><%= notice %></p>
+
+<%= render @group %>
+
+<div id="entities">
+  <% @entities.each do |entity| %>
+    <div class="entity">
+      <div>
+        Transaction
+        <%= entity.name %> <br>
+      </div>
+      <div class="entityDate">
+        <%= entity.created_at.strftime('%d %b %Y') %> at <%= entity.created_at.strftime('%I:%M%P') %> 
+        <hr>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="groupIndexButton">
+    <%= link_to "Add a new transaction", new_group_entity_path(params[:id]), class: "groupIndexButtonL" %>
+  </div>
+
+   <%#= link_to "Edit this group", edit_group_path(@group) %> 
+  <%#= link_to "Back to groups", groups_path %>
+  <%#= button_to "Destroy this group", @group, method: :delete %>
+</div>

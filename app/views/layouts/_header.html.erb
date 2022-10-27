@@ -1,0 +1,40 @@
+<div class="header">
+
+  <div class="headerLeft">
+    <%- if controller_name == 'sessions' || controller_name == 'registrations' %>
+      <%= link_to image_tag("/assets/back"), root_path, class: "headerBack" %><br />
+    <%- elsif controller_name == 'groups' && controller.action_name == 'index' %>
+      <%= link_to image_tag("/assets/menu"), splash_screen_menu_path, class: "headerBack" %><br />
+    <%- elsif controller_name == 'groups' && controller.action_name == 'show' || controller.action_name == 'menu' %>
+      <%= link_to image_tag("/assets/back"), groups_path, class: "headerBack" %><br />
+    <%- elsif controller_name == 'groups' && controller.action_name == 'new' %>
+      <%= link_to image_tag("/assets/back"), groups_path, class: "headerBack" %><br />
+    <%- elsif controller_name == 'entities' && controller.action_name == 'new' %>
+      <%= link_to image_tag("/assets/back"), group_path(params[:group_id]), class: "headerBack" %><br />
+    <%- elsif controller_name == 'users' && controller.action_name == 'edit' %>
+      <%= link_to image_tag("/assets/back"), groups_path, class: "headerBack" %><br />
+    <% end %>
+  </div>
+
+  <div class="headerCenter">
+    <%- if controller_name == 'sessions' || controller_name == 'registrations' || controller_name == 'groups' || controller_name == 'entities'%>
+      <%= name %>
+    <%- elsif controller.action_name == 'menu' %>
+      <%= name %>
+    <%- elsif controller_name == 'users' && controller.action_name == 'edit' %>
+      <%= name %><br />
+    <% end %>
+  </div>
+
+  <div class="headerRight">
+    <%- if controller_name == 'sessions' || controller_name == 'registrations' %>
+      <%= f.submit name, class: "headerButton" %>
+    <%- elsif controller_name == 'users' && controller.action_name == 'edit' %>
+      <%= f.submit b_name, class: "headerButton" %>
+    <%- elsif controller.action_name == 'new' && controller_name = 'groups' %>
+      <%= f.submit b_name, class: "headerButton" %>
+    <% end %>
+
+  </div>
+
+</div>

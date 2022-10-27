@@ -1,0 +1,13 @@
+<%= render partial: "/layouts/header", locals: {name: "Categories"} %>
+
+<p style="color: green"><%= notice %></p>
+
+<div id="groups">
+  <% @groups.each do |group| %>
+    <%= render group %>
+  <% end %>
+</div>
+
+<div class="groupIndexButton">
+  <%= link_to "Add a new category", new_group_path, class: "groupIndexButtonL" %>
+</div>

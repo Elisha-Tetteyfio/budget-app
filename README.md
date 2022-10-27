@@ -1,62 +1,58 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Budget App
 
-> Description the project.
+> The Budget app is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Ruby
+- Rails
+- PostgreSQL
 
-## Live Demo (if available)
+## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
+- [Live demo](https://tetteyfio-budget-app.herokuapp.com/)
+- [Video presentation](https://www.loom.com/share/8646fceda2614b08856d6268e58b4c72)
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
+- Ruby
+- Database (PostgreSQL)
+- Rails
 ### Setup
-
+- Navigate to the folder in which you want to have the app and run `git clone https://github.com/Elisha-Tetteyfio/budget-app.git`
+- Move to the project directory using the command `cd budget-app`
+- Run `rails s` and follow the link provided to view it in your browser.
 ### Install
-
-### Usage
+- PostgreSQL
+- Ruby
+- Rails
 
 ### Run tests
-
-### Deployment
-
+- To run the tests, run `rspec`
 
 
-## Authors
+## Author
 
-👤 **Author1**
+👤 **Elisha Tetteyfio**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Elisha-Tetteyfio](https://github.com/Elisha-Tetteyfio)
+- Twitter: [@Elisha](https://twitter.com/Nii_AlYasa)
+- LinkedIn: [Elisha Tetteyfio](https://linkedin.com/in/elisha-tetteyfio)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Elisha-Tetteyfio/budget-app/issues).
 
 ## Show your support
 
@@ -64,9 +60,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- The design for this project was inspired by Gregoire Vella's [design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) on behance.
 
 ## 📝 License
 
