@@ -6,7 +6,7 @@ RSpec.describe Group, type: :model do
   before :each do
     subject.user = user
     subject.name = 'Clothes'
-    subject.icon = "https//google.com"
+    subject.icon = 'https//google.com'
   end
 
   it 'Expect the subject to be valid' do
@@ -20,6 +20,5 @@ RSpec.describe Group, type: :model do
   it 'Should have an icon' do
     subject.icon = nil
     expect(subject).to_not be_valid
-  end  
+  end
 end
-

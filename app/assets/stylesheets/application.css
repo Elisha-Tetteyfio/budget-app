@@ -94,6 +94,10 @@ body {
   margin: 3%;
 }
 
+.groupCardL img {
+  width: 100%;
+}
+
 .groupCardC {
   width: 50%;
   margin: 3%;

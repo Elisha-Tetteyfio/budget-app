@@ -4,8 +4,8 @@ RSpec.describe User, type: :model do
   subject { described_class.new }
   before :each do
     subject.name = 'User1'
-    subject.email = "user@com"
-    subject.password = "aaaaaa"
+    subject.email = 'user@com'
+    subject.password = 'aaaaaa'
   end
 
   it 'Expect the subject to be valid' do
@@ -25,8 +25,7 @@ RSpec.describe User, type: :model do
     expect(subject).to_not be_valid
   end
   it 'Should have password with more than six characters' do
-    subject.password = "fffff"
+    subject.password = 'fffff'
     expect(subject).to_not be_valid
   end
-  
 end

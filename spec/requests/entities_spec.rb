@@ -1,9 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe "/entities", type: :request do
-
+RSpec.describe '/entities', type: :request do
   user = User.create(name: 'User1', email: 'ee@com', password: 'eeeeee')
-  group = Group.create(user: user, name: 'Clothes', icon: "aaa")
+  group = Group.create(user:, name: 'Clothes', icon: 'aaa')
   subject { Entity.new }
   before :each do
     subject.name = 'Shoes'
@@ -15,22 +14,22 @@ RSpec.describe "/entities", type: :request do
     sign_in user
   end
 
-  describe "GET /index" do
+  describe 'GET /index' do
     it " '/groups/:id/entities' should lead to the group index page" do
       get group_entities_path group
       expect(response).to render_template(:index)
     end
   end
 
-  describe "GET /show" do
+  describe 'GET /show' do
     it " '/groups/:id/entities/:id' should lead to the group index page" do
       get group_entity_path group, subject
       expect(response).to render_template(:show)
     end
   end
 
-  describe "GET /new" do
-    it "renders a successful response" do
+  describe 'GET /new' do
+    it 'renders a successful response' do
       get new_group_entity_path group
       expect(response).to render_template(:new)
     end

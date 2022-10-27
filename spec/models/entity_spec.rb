@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Entity, type: :model do
   user = User.create(name: 'User1')
-  group = Group.create(user_id: user.id, name: 'Clothes', icon: "https//google.com")
+  group = Group.create(user_id: user.id, name: 'Clothes', icon: 'https//google.com')
   subject { described_class.new }
   before :each do
     subject.author = user
@@ -28,12 +28,11 @@ RSpec.describe Entity, type: :model do
     expect(subject).to_not be_valid
   end
   it 'Amount should be numeric' do
-    subject.amount = "Five"
+    subject.amount = 'Five'
     expect(subject).to_not be_valid
   end
   it 'Amount should be greater than zero' do
     subject.amount = -5
     expect(subject).to_not be_valid
   end
-  
 end
