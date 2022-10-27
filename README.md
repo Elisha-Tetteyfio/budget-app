@@ -11,9 +11,10 @@
 - Rails
 - PostgreSQL
 
-## Live Demo (not available)
+## Live Demo 
 
-[Not available yet](https://livedemo.com)
+- [Live demo](https://tetteyfio-budget-app.herokuapp.com/)
+- [Video presentation](https://www.loom.com/share/8646fceda2614b08856d6268e58b4c72)
 
 
 ## Getting Started
