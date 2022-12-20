@@ -13,7 +13,7 @@
 
 ## Live Demo 
 
-- [Live demo](https://tetteyfio-budget-app.herokuapp.com/)
+- [Live demo not available for now](https://tetteyfio-budget-app.herokuapp.com/)
 - [Video presentation](https://www.loom.com/share/8646fceda2614b08856d6268e58b4c72)
 
 
@@ -29,7 +29,9 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 - Navigate to the folder in which you want to have the app and run `git clone https://github.com/Elisha-Tetteyfio/budget-app.git`
 - Move to the project directory using the command `cd budget-app`
+- You would have to change the `username` and `password` in `config/database.yml` (lines 27 and 28, 63 and 64 if you want to run tests), to match the one in your system.
 - Run `rails s` and follow the link provided to view it in your browser.
+
 ### Install
 - PostgreSQL
 - Ruby
